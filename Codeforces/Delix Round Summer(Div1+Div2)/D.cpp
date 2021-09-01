@@ -55,7 +55,7 @@ void solve(){
  
 
 int main() {
-	ipop();
+	//ipop();
 
 	int t=1,x=1;
 	cin>>t;
