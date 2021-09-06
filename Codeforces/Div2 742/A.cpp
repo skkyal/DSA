@@ -15,11 +15,19 @@ ll max(ll a,ll b,ll c){return max(a,max(b,c));}
 
 void solve(){
 	ll n;cin>>n;
+	string s;cin>>s;
 
-	vector<ll>a(n);//,dp(1e5+1);
-	for(ll i=0;i<n;i++) cin>>a[i];
+	string ans;
 
-	
+	for(ll i=0;i<n;i++){
+		if(s[i]=='L' || s[i]=='R')
+			ans.push_back(s[i]);
+		else if(s[i]=='D')
+			ans.push_back('U');
+		else ans.push_back('D');
+	}
+
+	cout<<ans;
 }
  
 
@@ -33,7 +41,7 @@ int main() {
 	ipop();
 
 	int t=1,x=1;
-	//cin>>t;
+	cin>>t;
 	while(t--){
 		//cout<<"Case #"<<x<<":"<<" ";x++;
 		solve();
